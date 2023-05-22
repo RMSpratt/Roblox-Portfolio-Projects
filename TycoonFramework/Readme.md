@@ -4,8 +4,10 @@ This directory contains stripped template code for managing a Tycoon's basic pro
 This framework has been configured for use in a single-Tycoon context, and a multi-Tycoon context.
 
 ## Code Organization
-There are several key components encapsulated in ModuleScript metatables for managing tycoon processes.
+There are several key components encapsulated in ModuleScript metatables for managing tycoon processes. 
 A full diagram can be seen below:
+
+![Tycoon Entity Diagram](./Images/Entity-Diagram.png?raw=true "Tycoon Entities")
 
 A single Server Script **Driver** is used for server-side initialization of Tycoon functionality 
 to setup each Tycoon.
@@ -73,6 +75,8 @@ for safe modification of Items.
 ### Items
 Items themselves are represented using small data tables of key-value pairs.
 The only required value in a table is the cost of an item, as the key acts as a unique identifier.
+
+![Item Diagram](./Images/Item-Structure.png?raw=true "Item Table Structure")
 
 The Vendor and Builder reference items by Id and use the Id to reference craftable Item Models.
 
