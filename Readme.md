@@ -1,7 +1,17 @@
 # Roblox Project Portfolio
 
 ## Large Coding Projects
+My larger Roblox projects mostly comprise personal projects for implementing frameworks and/or experimenting in Lua.
 
+**Tycoon Framework**
+An early project inspired by earlier Tycoons was the creation of a reusable framework for managing Tycoon systems.
+The key components are outlined in the TycoonFramework sub-directory.
+
+A modified version of the Framework was used for a game submission for school and an unreleased Roblox game, (still playable).
+
+https://www.roblox.com/games/9069054586/CS-9541-Final-Game
+
+https://www.roblox.com/games/9502761921/Monkey-Warfare#!/about
 
 ## Small Coding Projects
 I have also worked on creating a number of smaller coding projects.
