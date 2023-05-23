@@ -32,7 +32,7 @@ An animated video can be found here: [Animated Leaderboard](./GlobalLeaderboard/
 
 ### Tool Re-working
 I have re-created the functionality for several classic Roblox gear, restoring thier functionality using updated features
-such as FilteringEnabled.
+such as FilteringEnabled. Samples can be found [Here](./Tools).
 
-The code and examples for these re-worked tools can be found (HERE).
-
+![Decoy Deploy](./Tools/DecoyDeploy/Decoy-Deploy-Prev.png?raw=true "Decoy Deploy Preview")
+![Snowball Cannon](./Tools/SnowballCannon/Snowball-Cannon-Prev.png?raw=true "Snowball Cannon Preview")
