@@ -1,4 +1,5 @@
 # Roblox Project Portfolio
+Below is a brief sampling of the projects included in this portfolio repository.
 
 ## Large Coding Projects
 My larger Roblox projects mostly comprise personal projects for implementing frameworks and/or experimenting in Lua.
@@ -13,7 +14,7 @@ This framework has support for:
 - Evaluating conditions to determine flow of a tree
 - Custom styling for dialog nodes
 
-More details can be found in the [DialogSystem fodler](./DialogSystem).
+More details can be found in the [DialogSystem folder](./DialogSystem).
 
 The code is not included, but a collection of sequence diagrams and entity models paint a picture of the framework.
 I have personally used the framework for regular NPCs and facilitating quest dialog.
