@@ -3,8 +3,25 @@
 ## Large Coding Projects
 My larger Roblox projects mostly comprise personal projects for implementing frameworks and/or experimenting in Lua.
 
+### Dialog-Tree Framework
+This project saw the creation of a framework for managing dnd displaying Dialog Trees. 
+
+This framework has support for:
+- Navigating forwards and backwards
+- Processing branches from options
+- Triggering events for reaching nodes
+- Evaluating conditions to determine flow of a tree
+- Custom styling for dialog nodes
+
+More details can be found in the [DialogSystem fodler](./DialogSystem).
+
+The code is not included, but a collection of sequence diagrams and entity models paint a picture of the framework.
+I have personally used the framework for regular NPCs and facilitating quest dialog.
+
+![Dialog-Options-Prompt](./DialogSystem/Images/Demonstrations/Dialog-Options-Prompt.png?raw=true "Dialog Node Preview")
+
 ### Tycoon Framework 
-An early project inspired by earlier Tycoons was the creation of a reusable framework for managing Tycoon systems.
+One project inspired by the older roblox Tycoon model was the creation of a reusable framework for managing Tycoon functionality.
 The key components are outlined in the TycoonFramework sub-directory.
 
 A modified version of the Framework was used for a game submission for school and an unreleased Roblox game, (still playable).
