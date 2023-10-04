@@ -1,37 +1,6 @@
----The BaseClass to inherit from.
-local BaseClass = {}
+---Examples of the "KeepOverloadMethods" pattern in action.
 
---The ChildClass to create instances of.
-local ChildClass = {}
-setmetatable(ChildClass, {__index = ChildClass})
-
----Create an instance of the Child Class.
----@return table
-function ChildClass.New()
-    local newChild = {}
-
-    for k,v in BaseClass do
-
-        if ChildClass[k] and type(v) == "function" then
-
-            --METHOD ONE: Hide BaseClass methods, only allowing indirect invocation.
-            newChild[k] = function(self) BaseClass[k](self) ChildClass[k]() end
-
-            --METHOD TWO: Allow Access to BaseClass methods for direct invocation.
-            --newChild[`_{k}`] = v
-            --newChild[k] = function(self) newChild[`_{k}`](self) ChildClass[k]() end
-        else
-            newChild[k] = v
-        end
-    end
-
-    setmetatable(newChild, ChildClass)
-
-    return newChild
-end
-
---Example #1: Deriving specific pizzas.
-
+--Example One: Custom Pizza Creation
 type Pizza = {
     BakeTime: number,
     AddSauce: () -> nil,
@@ -40,6 +9,7 @@ type Pizza = {
     KneadDough: () -> nil,
 }
 
+---BASE CLASS TO BE DERIVED FROM
 local BasePizza: Pizza = {
     BakeTime = 5,
 }
@@ -65,10 +35,10 @@ function BasePizza:KneadDough()
     print("Kneading the dough...")
 end
 
+---CHILD CLASS TO INHERIT FROM BASE
 local PepperoniPizza: Pizza = {
     BakeTime = 8
 }
-
 setmetatable(PepperoniPizza, {__index = PepperoniPizza})
 
 ---Create a New Pepperoni Pizza.
@@ -90,6 +60,7 @@ function PepperoniPizza.New()
     return newPizza
 end
 
+---Add Toppings to the Pizza. Override BasePizza method.
 function PepperoniPizza:AddToppings()
     --Inherit BasePizza functionality and then add additional toppings.
     print("Add pepperoni.")
@@ -109,7 +80,7 @@ type Warning = {
     WarningMessage: string
 }
 
----Base Custom Warning Class.
+---BASE CLASS TO BE DERIVED FROM
 local BaseWarning: Warning = {
     WarningType = "BaseWarning",
     WarningMessage = "Something went wrong.",
@@ -125,11 +96,10 @@ function BaseWarning:GetType()
     return self.WarningType
 end
 
----Custom Warning for a Missing Argument i.e. to a Function
+---CHILD CLASS TO INHERIT FROM BASE
 local MissingArgWarning: Warning = {
     WarningMessage = "Missing Argument"
 }
-
 setmetatable(MissingArgWarning, {__index = MissingArgWarning})
 
 ---Create a new MissingArgWarning.
