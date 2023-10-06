@@ -6,6 +6,8 @@
 ---@param inputTable table
 local function setTableRecur(inputTable: table, readonlyMetatable: table, keyPrefix: string)
 
+    local keysToDelete = {}
+
     for k, v in inputTable do
 
         if string.sub(k, 1, #keyPrefix) ~= keyPrefix then
@@ -15,8 +17,12 @@ local function setTableRecur(inputTable: table, readonlyMetatable: table, keyPre
             end
 
             inputTable[`{keyPrefix}{k}`] = v
-            inputTable[k] = nil
+            table.insert(keysToDelete, k)
         end
+    end
+
+    for _, deleteKey in keysToDelete do
+        inputTable[deleteKey] = nil
     end
 
     --Retain any existing metamethods other than index and newindex
