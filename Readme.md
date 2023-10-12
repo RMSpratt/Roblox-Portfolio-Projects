@@ -44,7 +44,7 @@ An example application for this code is for creating a Lobby chatroom that hides
 I worked on creating global leaderboards capable of tracking different stats and updating in real time.
 Updates are handled on the Server and passed to the client where they are animated for display.
 
-An animated video can be found here: [Animated Leaderboard](./GlobalLeaderboard/Images-Video/Leaderboard-Displays.mp4).
+An animated video can be found here: [Animated Leaderboard](./GlobalLeaderboard/Images-Video/Leaderboard-Update.gif).
 
 ![Sample leaderboard display](./GlobalLeaderboard/Images-Video/Leaderboard-Displays.png?raw=true "Global Leaderboard")
 
