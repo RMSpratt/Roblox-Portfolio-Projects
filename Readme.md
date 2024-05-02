@@ -22,14 +22,15 @@ I have personally used the framework for regular NPCs and facilitating quest dia
 ![Dialog-Options-Prompt](./DialogSystem/Images/Demonstrations/Dialog-Options-Prompt.png?raw=true "Dialog Node Preview")
 
 ### Tycoon Framework 
-One project inspired by the older roblox Tycoon model was the creation of a reusable framework for managing Tycoon functionality.
-The key components are outlined in the TycoonFramework sub-directory.
+Implementation of a template reusable Tycoon Framework with support for the following features:
+- Generating and managing Tycoon revenue for purchases
+- Loading and unloading instances as Tycoon purchases
+- Defining available purchases using saved purchase history and dependency trees
+- Defining subscribable Tycoon data with low coupling for external actors and Tycoon functionality
+- Communicating Tycoon data to individual clients
+- Support for saved player data
 
-A modified version of the Framework was used for a game submission for school and an unreleased Roblox game, (still playable).
-
-https://www.roblox.com/games/9069054586/CS-9541-Final-Game
-
-https://www.roblox.com/games/9502761921/Monkey-Warfare#!/about
+More details can be found here: [Tycoon Framework](<./Tycoon Framework>)
 
 ## Small Coding Projects
 I have also worked on creating a number of smaller coding projects.
