@@ -61,7 +61,7 @@ data changes on the server and on the client.
 
 ### Non-Worker Instances
 Any ModuleScripts acting as smart objects that need Tycoon data to function, are referred to as
-TycoonObjects. A subset of these smart objects derive from sleitnick's Component type definition
+TycoonObjects. A subset of these smart objects derive from the external Component type definition
 and are known as TycoonComponents.
 
 #### Data Flow
